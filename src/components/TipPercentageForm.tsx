@@ -28,7 +28,7 @@ export const TipPercentageForm = ({setTip, tip} : TipPercentageFormProps) => {
     return (
         <div>
 
-            <h3 className="font-black text-2xl">Propina: </h3>
+            <h3 className="font-black text-2xl">Tip: </h3>
 
             <form>
 

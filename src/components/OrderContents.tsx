@@ -12,7 +12,7 @@ type OrderContentProps = {
 export const OrderContents = ({order, removeItem} : OrderContentProps) => {
     return (
         <div>
-            <h2 className="font-black text-4xl">Consumo</h2>
+            <h2 className="font-black text-4xl">Consum</h2>
             <div className="space-y-3 mt-10">
                 {order.map(item => (
                     <div 
@@ -24,7 +24,7 @@ export const OrderContents = ({order, removeItem} : OrderContentProps) => {
                                 {item.name} - {formatCurrency(item.price)}
                             </p>
                             <p className="font-black">
-                                Cantidad: {item.quantity} - {formatCurrency(item.price * item.quantity)}
+                                Amount: {item.quantity} - {formatCurrency(item.price * item.quantity)}
                             </p>
                         </div>
 

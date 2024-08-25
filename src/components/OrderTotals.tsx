@@ -21,15 +21,15 @@ export const OrderTotals = ({order, tip, placeOrder} : OrderTotalProps) => {
     return (
         <>
             <div className="space-y-3">
-                <h2 className="font-black text-2xl">Totales y Propina: </h2>
+                <h2 className="font-black text-2xl">Totals & Tips: </h2>
                 <p>
-                    Subtotal a pagar: <span className="font-bold">{formatCurrency(subtotalAmount)}</span>
+                    Subtotal to pay: <span className="font-bold">{formatCurrency(subtotalAmount)}</span>
                 </p>
                 <p>
-                    Propina: <span className="font-bold">{formatCurrency(tipAmount)}</span>
+                    Tip: <span className="font-bold">{formatCurrency(tipAmount)}</span>
                 </p>
                 <p>
-                    Total a pagar: <span className="font-bold">{formatCurrency(totalAmount)}</span>
+                    Total to pagar: <span className="font-bold">{formatCurrency(totalAmount)}</span>
                 </p>
             </div>
 
@@ -38,7 +38,7 @@ export const OrderTotals = ({order, tip, placeOrder} : OrderTotalProps) => {
                 disabled={totalAmount === 0}
                 onClick={placeOrder}
             >
-                Guardar Orden
+                Save order
             </button>
         </>
     );
