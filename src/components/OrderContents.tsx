@@ -1,10 +1,13 @@
+
 import { MenuItemT, OrderItem } from "../types";
 import { formatCurrency } from '../helpers/index';
+
 
 type OrderContentProps = {
     order : OrderItem[];
     removeItem : (id : MenuItemT['id']) => void;
 }
+
 
 export const OrderContents = ({order, removeItem} : OrderContentProps) => {
     return (
@@ -37,3 +40,4 @@ export const OrderContents = ({order, removeItem} : OrderContentProps) => {
         </div>
     );
 }
+

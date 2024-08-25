@@ -1,13 +1,11 @@
 import type { MenuItemT } from "../types";
 
-// * NOTE: TYPES
 
 type MenuItemPropsT = {
     item : MenuItemT;
     addItem : (item : MenuItemT) => void;
 }
 
-// * NOTE: Component
 
 export const MenuItem = ({item, addItem} : MenuItemPropsT) => {
     return (
@@ -18,5 +16,6 @@ export const MenuItem = ({item, addItem} : MenuItemPropsT) => {
           <p>{item.name}</p>
           <p className="font-black">${item.price}</p>
       </button>
-    )
+    );
 }
+
